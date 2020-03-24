@@ -1,0 +1,23 @@
+{
+    "python.pythonPath": ".venv/bin/python3",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.autoComplete.extraPaths": [
+        ".venv/lib/python3.8/site-packages" // modify this path to fit to your environmental
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "git.ignoreLimitWarning": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120",
+        "--experimental",
+    ],
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{based_on_style: chromium, indent_width: 20}"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ]
+}

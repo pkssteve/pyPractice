@@ -8,11 +8,12 @@ setup(
     author_email='pkssteve@gmail.com',
     url='https://github.com/pkssteve/pyPractice',
     download_url='',
-    install_requires=[],
+    install_requires=['django'],
     packages=find_packages(exclude=['docs', 'tests*']),
     keywords=['python practice'],
     python_requires='>=3',
     classifiers=[
         'Programming Language :: Python :: 3.6'
     ]
+
 )
