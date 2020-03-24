@@ -5,6 +5,7 @@ from django.http import HttpResponse
 
 
 print("Test URL is http://127.0.0.1:5000/hello/pks")
+print("This is for signning commit")
 
 
 def home(request):
