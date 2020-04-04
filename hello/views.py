@@ -9,7 +9,15 @@ print("This is for signning commit")
 
 
 def home(request):
-    return HttpResponse("Hello, Django!!!!")
+    return render(request, "hello/home.html")
+
+
+def about(request):
+    return render(request, "hello/about.html")
+
+
+def contact(request):
+    return render(request, "hello/contact.html")
 
 
 def hello_there(request, name):
@@ -21,24 +29,6 @@ def hello_there(request, name):
             'date': datetime.now()
         }
     )
-
-
-'''
-    now = datetime.now()
-    formatted_now = now.strftime("%A, %d %B, %Y at %X")
-
-    match_object = re.match("[a-zA-Z]+", name)
-
-    if match_object:
-        clean_name = match_object.group(0)
-    else:
-        clean_name = "Friend"
-    
-    content = "Hellop there, " + clean_name + "! It's " + formatted_now
-
-    return HttpResponse(content)
-
-'''
 
 
 # Create your views here.
