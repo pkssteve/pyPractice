@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": ".venv/bin/python3",
+    "python.pythonPath": ".venv/bin/python",
     "python.envFile": "${workspaceFolder}/.env",
     "python.autoComplete.extraPaths": [
         ".venv/lib/python3.8/site-packages" // modify this path to fit to your environmental
